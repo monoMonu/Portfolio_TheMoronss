@@ -4,10 +4,11 @@ import DomainMethodologies from './DomainMethodologies'
 
 function DetailsSec() {
   return (
-    <div className='bg-[#f3f2ee] p-6'>
+    <div className='bg-[#f3f2ee] relative'>
       <Navbar />
-      DetailsSec
-      <DomainMethodologies />
+      <div className='p-6'>
+        <DomainMethodologies />
+      </div>
    </div>
   )
 }

@@ -123,23 +123,24 @@ export default function Component() {
                 { name: 'Mongoose', value: 65 },
               ].map((skill) => (
                 <div key={skill.name} className="relative w-24 h-24">
-                  <svg className="w-24 h-24" viewBox="0 0 36 36">
-                    <path
-                      d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                  <svg className="w-24 h-24 -rotate-90" viewBox="0 0 36 36">
+                    <circle
+                      cx="18"
+                      cy="18"
+                      r="16"
                       fill="none"
-                      stroke="#eee"
-                      strokeWidth="3"
+                      className="stroke-[#eee]"
+                      strokeWidth="3.2"
                     />
-                    <path
-                      d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                    <circle
+                      cx="18"
+                      cy="18"
+                      r="16"
                       fill="none"
-                      stroke="black"
-                      strokeWidth="3"
+                      className="stroke-black"
+                      strokeWidth="3.2"
                       strokeDasharray={`${skill.value}, 100`}
+                      strokeLinecap="round"
                     />
                   </svg>
                   <div className="absolute inset-0 flex items-center justify-center flex-col">
@@ -151,14 +152,15 @@ export default function Component() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-1 gap-8">
             <div>
               <h3 className="text-lg font-semibold mb-4">Role-Based Skill Tags</h3>
               <div className="w-full h-[300px] flex items-center justify-center">
                 <Doughnut data={donutChartData} options={{ maintainAspectRatio: false }} />
               </div>
             </div>
-            <div>
+
+            <div className="border-2 border-gray-300 rounded-lg p-4 w-full">
               <h3 className="text-lg font-semibold mb-4">Deployment vs Testing</h3>
               <div className="w-full h-[300px]">
                 <Line data={lineChartData} options={{ maintainAspectRatio: false }} />
@@ -166,7 +168,7 @@ export default function Component() {
             </div>
           </div>
 
-          <div className="space-y-4 border rounded-lg p-6">
+          <div className="space-y-4 border-2 border-gray-300 rounded-lg p-6 w-full">
             <div className="flex items-center gap-2">
               <h3 className="text-lg font-semibold">Summary</h3>
               <span className="text-gray-400 text-sm">⚡ Moronss AI Generated</span>

@@ -5,7 +5,7 @@ import ProfileSec from "./components/ProfileSec"
 function App() {
 
   return (
-    <div className="portfolio">
+    <div className="flex">
       <ProfileSec />
       <DetailsSec />
     </div>

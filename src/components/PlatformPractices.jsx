@@ -24,18 +24,18 @@ const PlatformPractices = () => {
     {
       title: "Project Hosting",
       links: [
-        { name: "GitHub", url: "https://github.com", extra: "48 forks 23 stars" },
+        { name: "GitHub", url: "https://github.com", extra: ["48 forks", "23 stars"] },
         { name: "GitLab", url: "https://gitlab.com" },
       ],
     },
   ];
 
   return (
-    <div className="bg-black text-white p-2.5 py-4 rounded-[10px] shadow-lg">
+    <div className="bg-[#1b1b1b] text-white p-2.5 py-4 mt-6 rounded-[10px] shadow-lg">
       
       <h2 className="text-[24px] font-bold flex items-center border-b border-gray-600 pb-2">
         Platform Practices
-        <BadgeCheck className='text-[#22f] size-6 inline-block ml-2' />
+        <BadgeCheck className='text-[#1900D5] size-6 inline-block ml-2' />
       </h2>
       
       <div className="grid grid-cols-1 md:grid-cols-3 pt-2">
@@ -63,7 +63,9 @@ const PlatformPractices = () => {
 
                   <div className="flex items-center space-x-2">
                     {link.extra && (
-                      <span className="text-[10px] text-gray-400">{link.extra}</span>
+                      link.extra.map((el, ind) => (
+                        <span key={ind} className="text-[10px] text-gray-400 inline-block pl-5">{el}</span>
+                      ))
                     )}
                     <SquareArrowOutUpRight size={16} className="text-white"/>
                   </div>

@@ -46,7 +46,7 @@ const CoreSkills = () => {
     <div style={styles.header}>
         <div style={styles.header_sections}>
             <h2 className="text-3xl font-bold text-gray-600 m-1 mb-3">Core Skills</h2>
-            <BadgeCheck className='text-[#22f] size-7 inline-block ml-2 mt-2' />
+            <BadgeCheck className='text-[#1900D5] size-7 inline-block ml-2 mt-2' />
         </div>
         <hr className="border-gray-500 mb-3" />
         <div style={styles.skills_grid} >

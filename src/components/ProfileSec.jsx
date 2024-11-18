@@ -3,13 +3,13 @@ import { AtSign, BadgeCheck, PhoneCall } from 'lucide-react';
 
 function ProfileSec() {
   return (
-    <div className="bg-[#1B1B1B] text-[#ffffff] px-6 min-w-[484px] sticky bottom-0 h-min left-0 top-0">
+    <div className="bg-[#1B1B1B] text-[#ffffff] px-6 min-w-[484px] sticky bottom-0 h-min left-0 top-0" id='profileSec'>
 
       <img src='/pfp.jpg' alt="Profile" className="w-[190px] h-[190px] rounded-full mt-20 object-cover" />
 
       <h2 className="text-[36px] leading-[54px] font-bold my-1.5">
         Name 
-        <BadgeCheck className='text-[#22f] size-7 inline-block ml-2' />
+        <BadgeCheck className='text-[#1900D5] size-7 inline-block ml-2' />
       </h2>
 
       <div className='flex flex-col gap-1.5 border-[1px] border-[rgba(255, 255, 255, .3)] p-2.5 w-full mb-4 rounded-[10px]'>
@@ -85,7 +85,7 @@ function ProfileSec() {
         <div className='flex gap-4 mt-4 mb-5'>
           <Button content="Testing Report" />
           <a 
-            href="/#detailsSec"
+            href="/#detailedViewSec"
             rel="noopener noreferrer"
             className="block w-full"
           >

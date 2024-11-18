@@ -22,7 +22,7 @@ function DetailsSec() {
   return (
     <div className='bg-[#f3f2ee] relative' id='detailsSec'>
       <Navbar />
-      <div className='py-8 px-6 flex flex-col gap-6'>
+      <div className='py-8 px-6 flex flex-col gap-6' id='detailedViewSec'>
         <Greetings/>
         <CareerObj />
         <ProfileHighlights />
@@ -39,9 +39,11 @@ function DetailsSec() {
         <AllExperiences description="View More" color="#fff"/>
         <FindMeHere/>
         <DetailedViewOptions/>
-        <DomainMethodologies />
-        <HonorsAndAwards />
-        <PlatformPractices />
+        <div id='secondarySec'>
+          <DomainMethodologies />
+          <HonorsAndAwards />
+          <PlatformPractices />
+        </div>
       </div>
    </div>
   )

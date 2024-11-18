@@ -7,17 +7,19 @@ const DetailedViewOptions = () => {
 
       {/* Timeline event */}
       <div style={styles.btn}>
-      <button
-        style={{
-          background: "#FFC53D",
-          fontSize: "1.1rem",
-          fontWeight: "600",
-          padding: "10px",
-          boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.6)",
-        }}
-      >
-        Detailed View Options <span>&gt;</span>
-      </button>
+      <a href="#secondarySec">
+        <button
+          style={{
+            background: "#FFC53D",
+            fontSize: "1.1rem",
+            fontWeight: "600",
+            padding: "10px",
+            boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.6)",
+          }}
+        >
+          Detailed View Options <span>&gt;</span>
+        </button>
+      </a>
     </div>
     </div>
   )

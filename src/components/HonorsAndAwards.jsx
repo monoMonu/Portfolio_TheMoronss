@@ -45,7 +45,7 @@ export default function Component() {
   const visibleAwards = isExpanded ? awards : awards.slice(0, 2)
 
   return (
-    <div className="p-6 space-y-6 w-full bg-white border-2 border-gray-300 rounded-lg">
+    <div className="p-6 space-y-6 w-full bg-white border-2 border-gray-300 rounded-lg mb-10">
       <h2 className="text-2xl font-bold text-gray-900">Honors & Awards</h2>
       
       <hr />

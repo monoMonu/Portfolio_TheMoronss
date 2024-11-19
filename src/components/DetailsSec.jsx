@@ -17,6 +17,7 @@ import Education from './Education'
 import FindMeHere from './FindMeHere'
 import DetailedViewOptions from './DetailedViewOptions'
 import Greetings from './Greetings'
+import Certifications from './Certifications'
 
 function DetailsSec() {
   return (
@@ -42,6 +43,7 @@ function DetailsSec() {
         <div id='secondarySec'>
           <DomainMethodologies />
           <HonorsAndAwards />
+          <Certifications/>
           <PlatformPractices />
         </div>
       </div>

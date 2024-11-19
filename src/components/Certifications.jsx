@@ -46,7 +46,7 @@ export default function Component() {
   const visibleCertifications = isExpanded ? certifications : certifications.slice(0, 2)
 
   return (
-    <div className="p-6 space-y-6 w-full bg-white border-2 border-gray-300 rounded-lg">
+    <div className="p-6 space-y-6 w-full bg-white border-2 border-gray-300 rounded-lg mb-10">
       <h2 className="text-3xl font-bold text-gray-600">Certifications</h2>
       
       <hr />

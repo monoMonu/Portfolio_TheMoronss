@@ -15,7 +15,7 @@
 First, fork the repository and clone it.
 
 ```
-https://github.com/<username>/Portfolio_TheMoronss.git
+git clone https://github.com/<username>/Portfolio_TheMoronss.git
 ```
 
 Install Dependencies

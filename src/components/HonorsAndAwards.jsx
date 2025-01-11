@@ -45,7 +45,7 @@ export default function Component() {
   const visibleAwards = isExpanded ? awards : awards.slice(0, 2)
 
   return (
-    <div className="p-6 space-y-6 w-full bg-white border-2 border-gray-300 rounded-lg">
+    <div className="p-6 space-y-6 w-full bg-white border-2 border-gray-300 rounded-lg mb-10">
       <h2 className="text-2xl font-bold text-gray-900">Honors & Awards</h2>
       
       <hr />
@@ -60,19 +60,19 @@ export default function Component() {
               </div>
               <div className="flex items-center gap-2 text-gray-600">
                 <Calendar className="w-4 h-4" />
-                <span className="text-sm">{award.date}</span>
+                <span className="text-md font-semibold">{award.date}</span>
               </div>
             </div>
 
-            <p className="text-gray-600">{award.description}</p>
+            <li className="text-gray-600 text-lg ">{award.description}</li>
 
-            <div className="space-y-2">
-              <span className="text-sm font-medium">Skills</span>
+            <div className="flex items-center gap-4">
+              <span className="text-lg font-bold whitespace-nowrap">Skills:</span>
               <div className="flex flex-wrap gap-2">
                 {award.skills.map((skill, skillIndex) => (
                   <span
                     key={skillIndex}
-                    className="px-3 py-1 text-sm bg-gray-100 text-gray-800 rounded-full"
+                    className="px-4 py-2 text-base bg-white border-2 border-gray-300 rounded-2xl"
                   >
                     {skill}
                   </span>
@@ -83,7 +83,7 @@ export default function Component() {
             {award.hasReport && (
               <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
                 <img
-                  src="/placeholder.svg?height=80&width=80"
+                  src="https://placehold.co/400X300"
                   alt="Project Report"
                   width={80}
                   height={80}
